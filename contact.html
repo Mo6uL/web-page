@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | Howl's Moving Castle</title>
+<meta content="A small contact page for questions about this Howl's Moving Castle project." name="description"/>
+<meta content="#5a2328" name="theme-color"/>
+<link href="https://tufgaming.github.io/howl/contact.html" rel="canonical"/>
+<meta content="Kontakt | Howlův kráčející zámek" property="og:title"/>
+<meta content="Ukázkový kontaktní formulář pro fanouškovskou prezentaci Howlova kráčejícího zámku s validací ve Vanilla JavaScriptu." property="og:description"/>
+<meta content="https://tufgaming.github.io/howl/images/calcifer.webp" property="og:image"/>
+<meta content="https://tufgaming.github.io/howl/contact.html" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="cs_CZ" property="og:locale:alternate"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Kontakt | Howlův kráčející zámek" name="twitter:title"/>
+<meta content="Ukázkový kontaktní formulář pro fanouškovskou prezentaci Howlova kráčejícího zámku s validací ve Vanilla JavaScriptu." name="twitter:description"/>
+<meta content="https://tufgaming.github.io/howl/images/calcifer.webp" name="twitter:image"/>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Howl's Moving Castle: A Journey Through Ingary",
+    "description": "Ukázkový kontaktní formulář pro fanouškovskou prezentaci Howlova kráčejícího zámku s validací ve Vanilla JavaScriptu.",
+    "about": ["Howl's Moving Castle", "Diana Wynne Jones", "Studio Ghibli", "Hayao Miyazaki"],
+    "inLanguage": ["cs", "en"],
+    "image": "https://tufgaming.github.io/howl/images/calcifer.webp",
+    "url": "https://tufgaming.github.io/howl/contact.html"
+  }
+  </script>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div aria-hidden="true" class="star-background">
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+</div>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="navbar">
+<div class="nav-container">
+<div class="logo">
+<a aria-label="Home page" href="index.html">
+<span>Howl's Castle</span>
+</a>
+</div>
+<button aria-controls="nav-menu" aria-expanded="false" aria-label="Open main menu" class="menu-toggle" id="menu-toggle">
+<span class="hamburger-line"></span>
+<span class="hamburger-line"></span>
+<span class="hamburger-line"></span>
+</button>
+<nav aria-label="Main navigation" class="nav-menu" id="nav-menu">
+<ul class="nav-list">
+<li><a class="nav-link" data-i18n="nav_home" href="index.html">Home</a></li>
+<li><a class="nav-link" data-i18n="nav_about" href="about.html">About</a></li>
+<li><a class="nav-link" data-i18n="nav_characters" href="characters.html">Characters</a></li>
+<li><a class="nav-link" data-i18n="nav_gallery" href="gallery.html">Gallery</a></li>
+<li><a aria-current="page" class="nav-link active" data-i18n="nav_contact" href="contact.html">Contact</a></li>
+</ul>
+<div class="nav-controls">
+<button aria-label="Switch language" class="control-btn" data-i18n="lang_toggle" id="lang-toggle">Čeština</button>
+<button aria-label="Toggle dark or light mode" class="control-btn" data-i18n="theme_dark" id="theme-toggle">Dark Mode</button>
+</div>
+</nav>
+</div>
+</header>
+<main id="main-content">
+<section class="hero page-hero">
+<div class="hero-content">
+<h1 data-i18n="contact_hero_title">Write to the Castle</h1>
+<p data-i18n="contact_hero_subtitle">Send a letter to Howl and his friends. Calcifer will deliver it!</p>
+</div>
+</section>
+<section aria-labelledby="contact-title" class="container reveal">
+<h2 class="section-title" id="contact-title">Kontaktní formulář</h2>
+<div class="contact-layout">
+<form class="contact-form" id="contact-form" novalidate="">
+<div class="form-group">
+<label class="form-label" data-i18n="contact_label_name" for="name">Your Name:</label>
+<input aria-describedby="error-name" autocomplete="name" class="form-control" data-i18n="contact_placeholder_name" id="name" name="name" placeholder="Dayan Batbold" type="text"/>
+<small class="form-error-msg" data-i18n="contact_error_name" id="error-name">Please enter your name (at least 2 characters).</small>
+</div>
+<div class="form-group">
+<label class="form-label" data-i18n="contact_label_email" for="email">Email Address:</label>
+<input aria-describedby="error-email" autocomplete="email" class="form-control" data-i18n="contact_placeholder_email" id="email" name="email" placeholder="dayan@gmail.com" type="email"/>
+<small class="form-error-msg" data-i18n="contact_error_email" id="error-email">Please enter a valid email address.</small>
+</div>
+<div class="form-group">
+<label class="form-label" data-i18n="contact_label_message" for="message">Your Message:</label>
+<textarea aria-describedby="error-message" class="form-control" data-i18n="contact_placeholder_message" id="message" name="message" placeholder="Write your letter to Wizard Howl..." rows="7"></textarea>
+<small class="form-error-msg" data-i18n="contact_error_message" id="error-message">Message must be at least 10 characters long.</small>
+</div>
+<button class="cta-button" data-i18n="contact_submit" type="submit">Send Letter</button>
+</form>
+<aside aria-labelledby="castle-address" class="contact-card-info">
+<h3 data-i18n="contact_card_title" id="castle-address">Castle Address</h3>
+<p data-i18n="contact_card_desc">The castle has no fixed location, but it travels most frequently in the Waste above Porthaven.</p>
+<ul class="contact-details-list">
+<li><strong data-i18n="contact_card_owner">Owner: Wizard Howl Pendragon</strong></li>
+<li><strong data-i18n="contact_card_fuel">Powered by: Fire Demon Calcifer</strong></li>
+</ul>
+<div class="ai-note">
+<strong>AI integrace:</strong> Texty a ilustrace byly připraveny s pomocí AI nástroje a následně upraveny pro školní web.
+          </div>
+</aside>
+</div>
+</section>
+<div aria-labelledby="success-title" aria-modal="true" class="success-modal" id="success-modal" role="dialog">
+<div class="success-modal-content">
+<div aria-hidden="true" class="calcifer-animation-container">
+<div class="flame"></div>
+<div class="flame-inner"></div>
+<div class="flame-log"></div>
+<div class="calcifer-eyes">
+<div class="calcifer-eye"></div>
+<div class="calcifer-eye"></div>
+</div>
+</div>
+<h2 data-i18n="contact_success_title" id="success-title">Letter Sent!</h2>
+<p data-i18n="contact_success_desc">Calcifer swallowed your letter and will hand it to Howl once he returns.</p>
+<button class="cta-button" data-i18n="contact_success_close" id="success-close-btn" type="button">Close Message</button>
+</div>
+</div>
+</main>
+<footer class="footer">
+<div class="container">
+<p data-i18n="footer_copy">© 2026 Howl's Moving Castle. developed fr web project</p>
+<p class="footer-credits" data-i18n="footer_rights">All rights reserved. Inspired by Studio Ghibli and Diana Wynne Jones.</p>
+</div>
+</footer>
+<button aria-label="Back to top" class="back-to-top" id="back-to-top">
+<span aria-hidden="true" class="back-to-top-arrow"></span>
+</button>
+<script defer="" src="js/translations.js"></script>
+<script defer="" src="js/script.js"></script>
+</body>
+</html>

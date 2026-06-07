@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tufgaming.github.io/howl/sitemap.xml
