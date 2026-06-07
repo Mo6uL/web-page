@@ -149,13 +149,13 @@ Nebo otevřít `index.html` přímo v prohlížeči.
 
 ## 7. Screenshoty
 
-### Hlavní stránka
+### PC verze
 
-![Home preview](mobile-home-preview.png)
+![PC preview](mobile-home-preview.webp)
 
 ### Mobilní verze
 
-![Mobile preview](mobile-preview.jpg)
+![Phone preview](mobile-preview.webp)
 
 ---
 
