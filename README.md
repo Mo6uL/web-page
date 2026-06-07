@@ -6,7 +6,7 @@ Téma webu je *Howl's Moving Castle*.
 Živý web po nasazení:
 
 ```text
-https://tufgaming.github.io/howl/
+https://mo6ul.github.io/web-page/
 ```
 
 Pokud se repozitář jmenuje jinak, je potřeba upravit odkazy v `sitemap.xml`, `robots.txt` a v HTML souborech.
