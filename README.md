@@ -1,64 +1,64 @@
 # howl_finished
 
-Školní web do předmětu **Webové technologie**.
-Téma webu je *Howl's Moving Castle*.
+Školní web do předmětu **Webové technologie**.  
+Téma webu je **Howl's Moving Castle**.
 
-Živý web:
-
-```text
-https://mo6ul.github.io/web-page/
-```
-
+Živý web: [https://mo6ul.github.io/web-page/](https://mo6ul.github.io/web-page/)
 
 ---
 
 ## 1. O projektu
 
-Web je fanouškovská prezentace o filmu a příběhu *Howl's Moving Castle*.
-Obsahuje hlavní stránku, informace o díle, postavy, galerii a kontakt.
+Tento web je fanouškovská prezentace o filmu **Howl's Moving Castle**.
 
-Web je vytvořen bez frameworků.
-Použité jsou pouze:
+Téma jsem si vybral, protože mám rád filmy od **Studia Ghibli** a tento film má zajímavý svět, atmosféru, postavy a vizuální styl.
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
+Web obsahuje:
+
+- hlavní stránku
+- informace o filmu
+- postavy
+- galerii
+- kontakt
+
+Web je vytvořen bez frameworků, pouze pomocí **HTML, CSS a Vanilla JavaScriptu**.
 
 ---
 
 ## 2. Struktura projektu
 
 ```text
-howl_finished/
-├── index.html
-├── about.html
-├── characters.html
-├── gallery.html
-├── contact.html
+web-page/
 ├── css/
 │   └── style.css
+├── images/
 ├── js/
 │   ├── script.js
 │   └── translations.js
-├── images/
-├── screenshots/
+├── README.md
+├── about.html
+├── characters.html
+├── contact.html
+├── gallery.html
+├── index.html
+├── mobile-home-preview.png
+├── mobile-preview.jpg
 ├── robots.txt
-├── sitemap.xml
-└── README.md
+└── sitemap.xml
 ```
 
 ---
 
-## 3. Hlavní funkce webu
+## 3. Hlavní funkce
 
 - responzivní design pro mobil, notebook i PC
 - horní navigace
 - mobilní hamburger menu
-- tmavý a světlý režim
+- tmavý / světlý režim
 - přepínání jazyka CZ / EN
 - stránka s postavami
-- galerie s filtrem a náhledem obrázku
-- kontaktní formulář s kontrolou vstupů
+- galerie s filtrem
+- kontaktní formulář
 - tlačítko zpět nahoru
 
 ---
@@ -67,10 +67,10 @@ howl_finished/
 
 ### Performance
 
-Obrázky používají lazy loading. Fotky ve webu jsou ponechané v původních souborech, které jsem použil v projektu.
+Obrázky používají lazy loading.
 
 ```html
-<img src="images/sophie%20hatter.jpg" alt="Sophie Hatter" loading="lazy">
+<img src="images/sophie hatter.jpg" alt="Sophie Hatter" loading="lazy">
 ```
 
 JavaScript se načítá pomocí `defer`.
@@ -79,61 +79,38 @@ JavaScript se načítá pomocí `defer`.
 <script src="js/script.js" defer></script>
 ```
 
----
-
 ### SEO
 
 Každá stránka má vlastní title a description.
 
 ```html
-<title>Postavy | Howl's Moving Castle</title>
-<meta name="description" content="Postavy z příběhu Howl's Moving Castle.">
+<title>Howl's Moving Castle</title>
+<meta name="description" content="Webová prezentace o filmu Howl's Moving Castle.">
 ```
 
-Projekt obsahuje také:
-
-- `sitemap.xml`
-- `robots.txt`
-- canonical odkazy
-- Open Graph tagy
-
----
+Projekt obsahuje také `robots.txt` a `sitemap.xml`.
 
 ### Accessibility
 
-Web má alt texty u obrázků, labely u formuláře a viditelný focus stav.
+Použil jsem alt texty, labely u formuláře a lepší kontrast.
 
 ```html
-<label for="email">E-mailová adresa:</label>
+<label for="email">Email Address:</label>
 <input id="email" type="email">
 ```
 
-Mobilní menu používá `aria-expanded`.
-
-```html
-<button aria-expanded="false" aria-controls="nav-menu">
-  Menu
-</button>
-```
-
----
-
 ### Sociální sítě
 
-V HTML jsou Open Graph a Twitter/X tagy.
+Web obsahuje Open Graph tagy.
 
 ```html
 <meta property="og:title" content="Howl's Moving Castle">
-<meta property="og:image" content="images/hero_castle.png">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="website">
 ```
-
----
 
 ### UI / UX
 
-Layout používá CSS Grid, Flexbox a media queries.
-Web se přizpůsobí mobilu i větší obrazovce.
+Web používá Flexbox, Grid a media queries.
 
 ```css
 .gallery-grid {
@@ -142,11 +119,10 @@ Web se přizpůsobí mobilu i větší obrazovce.
 }
 ```
 
----
-
 ### AI integrace
 
-AI jsem použil jako pomoc při textech, CSS, JavaScriptu a překladech. Výsledek jsem potom upravil ručně podle projektu.
+AI jsem použil jako pomoc při textech, CSS, JavaScriptu a překladech.  
+Výsledek jsem potom upravil podle svého projektu.
 
 ---
 
@@ -155,66 +131,48 @@ AI jsem použil jako pomoc při textech, CSS, JavaScriptu a překladech. Výsled
 | Prompt | Výsledek |
 |---|---|
 | Napiš jednoduché texty o hlavních postavách. | První verze textů pro web. |
-| Pomoz mi vylepšit responzivní CSS pro mobil, tablet a počítač. | Lepší rozložení stránky, úprava velikostí a media queries. |
-| Navrhni zlepšení JavaScriptu bez frameworků. | Vylepšení menu, galerie a formuláře pomocí čistého JavaScriptu. |
-| Pomoz mi opravit problémy s překladem mezi angličtinou a češtinou. | Přirozenější české texty a oprava nepřesných překladů. |
+| Pomoz mi vylepšit responzivní CSS pro mobil, tablet a počítač. | Lepší rozložení stránky a media queries. |
+| Navrhni zlepšení JavaScriptu bez frameworků. | Vylepšení menu, galerie a formuláře. |
+| Pomoz mi opravit problémy s překladem mezi angličtinou a češtinou. | Přirozenější české texty. |
 
 ---
 
 ## 6. Spuštění projektu
 
-### Jednoduché otevření
-
 1. Stáhnout projekt.
-2. Rozbalit ZIP.
-3. Otevřít `index.html` v prohlížeči.
+2. Otevřít složku ve VS Code.
+3. Spustit `index.html` přes **Live Server**.
 
-### Live Server
-
-1. Otevřít složku ve VS Code.
-2. Nainstalovat rozšíření **Live Server**.
-3. Kliknout pravým tlačítkem na `index.html`.
-4. Zvolit **Open with Live Server**.
+Nebo otevřít `index.html` přímo v prohlížeči.
 
 ---
 
-## 7. GitHub Pages
+## 7. Screenshoty
 
-Web je nasazený přes GitHub Pages:
+### Hlavní stránka
 
-```text
-https://mo6ul.github.io/web-page/
-```
+![Home preview](mobile-home-preview.png)
 
-Projekt je ve veřejném repozitáři na GitHubu.
+### Mobilní verze
 
----
-
-## 8. Screenshoty
-
-Desktop:
-
-![Desktop preview](screenshots/desktop-preview.png)
-
-Mobil:
-
-![Mobile preview](screenshots/mobile-preview.jpg)
+![Mobile preview](mobile-preview.jpg)
 
 ---
 
-## 9. Testování
+## 8. Testování
 
-Otestováno ručně:
+Otestoval jsem:
 
+- navigaci
 - mobilní menu
-- přepínání jazyka
 - tmavý režim
-- galerie
+- přepínání jazyka
+- galerii
 - kontaktní formulář
-- responzivita na mobilu a PC
+- zobrazení na mobilu a PC
 
 ---
 
-## 10. Poznámka
+## Autor
 
-Tento web je pouze školní fanouškovský projekt.
+Dayan Batbold
