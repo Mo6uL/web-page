@@ -151,11 +151,11 @@ Nebo otevřít `index.html` přímo v prohlížeči.
 
 ### PC verze
 
-![PC preview](mobile-home-preview.webp)
+<img src="mobile-home-preview.webp" alt="PC preview" width="700">
 
 ### Mobilní verze
 
-![Phone preview](mobile-preview.webp)
+<img src="mobile-preview.webp" alt="Phone preview" width="300">
 
 ---
 
