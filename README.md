@@ -3,13 +3,12 @@
 Školní web do předmětu **Webové technologie**.
 Téma webu je *Howl's Moving Castle*.
 
-Živý web po nasazení:
+Živý web:
 
 ```text
 https://mo6ul.github.io/web-page/
 ```
 
-Pokud se repozitář jmenuje jinak, je potřeba upravit odkazy v `sitemap.xml`, `robots.txt` a v HTML souborech.
 
 ---
 
@@ -68,10 +67,10 @@ howl_finished/
 
 ### Performance
 
-Obrázky jsou ve formátu WebP a používají lazy loading.
+Obrázky používají lazy loading. Fotky ve webu jsou ponechané v původních souborech, které jsem použil v projektu.
 
 ```html
-<img src="images/sophie.webp" alt="Sophie Hatter" loading="lazy">
+<img src="images/sophie%20hatter.jpg" alt="Sophie Hatter" loading="lazy">
 ```
 
 JavaScript se načítá pomocí `defer`.
@@ -125,7 +124,7 @@ V HTML jsou Open Graph a Twitter/X tagy.
 
 ```html
 <meta property="og:title" content="Howl's Moving Castle">
-<meta property="og:image" content="images/hero_castle.webp">
+<meta property="og:image" content="images/hero_castle.png">
 <meta name="twitter:card" content="summary_large_image">
 ```
 
@@ -181,11 +180,13 @@ AI jsem použil jako pomoc při textech, CSS, JavaScriptu a překladech. Výsled
 
 ## 7. GitHub Pages
 
-1. Vytvořit public repozitář na GitHubu.
-2. Nahrát všechny soubory projektu.
-3. Otevřít **Settings → Pages**.
-4. Vybrat branch `main` a složku `/root`.
-5. Uložit a počkat na odkaz.
+Web je nasazený přes GitHub Pages:
+
+```text
+https://mo6ul.github.io/web-page/
+```
+
+Projekt je ve veřejném repozitáři na GitHubu.
 
 ---
 
@@ -193,11 +194,11 @@ AI jsem použil jako pomoc při textech, CSS, JavaScriptu a překladech. Výsled
 
 Desktop:
 
-![Desktop preview](screenshots/desktop-home-preview.png)
+![Desktop preview](screenshots/desktop-preview.png)
 
 Mobil:
 
-![Mobile preview](screenshots/mobile-home-preview.png)
+![Mobile preview](screenshots/mobile-preview.jpg)
 
 ---
 
